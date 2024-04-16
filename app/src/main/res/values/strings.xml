@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">expense tracker system</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="amount">Amount:</string>
+    <string name="note">Note:</string>
+    <string name="register" />
+    <string name="add_budget">Add Budget</string>
+    <string name="budget">BUDGET</string>
+    <string name="goals">Goals</string>
+    <string name="want_tips">Want Tips ?</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="google">Google</string>
+    <string name="log_out">Log Out</string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password_label">An email was sent. Please check your email within the next few minutes for more instructions</string>
+    <string name="sign_up_error_title">Error</string>
+    <string name="balance">Balance</string>
+    <string-array name="financial_tips">
+        <item>Budgeting</item>
+        <item>Saving</item>
+        <item>Investing</item>
+        <item>Debt Management</item>
+        <item>Financial planning</item>
+        <item>Mastering Money</item>
+        <item>Money Literacy</item>
+        <item>Debts</item>
+        <item>Saving 101</item>
+        <item>Financial Habits</item>
+        <item>Finance 101</item>
+
+    </string-array>
+
+
+    <string-array name="tips_description">
+        <item>https://n26.com/en-eu/blog/budgeting-tips</item>
+        <item>https://www.regions.com/insights/personal/personal-finances/budgeting-and-saving/10-best-ways-to-save-money</item>
+        <item>https://www.fidelity.com/learning-center/smart-money/investing-tips</item>
+        <item>https://www.standardbank.co.za/southafrica/personal/learn/important-debt-management-tips</item>
+        <item>https://www.themuse.com/advice/50-personal-finance-tips-that-will-change-the-way-you-think-about-money</item>
+        <item>https://open.spotify.com/episode/7ygqnpP4OPeZKBndyCWW2H?si=hK0AR3EmTkmQtGyI5UWvFg</item>
+        <item>https://open.spotify.com/show/1mZW6VbGWjB1juXBwD9jlx?si=B58YcJMYTsiuCk0A5Gw0KA</item>
+        <item>https://youtu.be/pXZQBKZCWfc</item>
+        <item>https://youtu.be/wa4Vv9RRljo</item>
+        <item>https://youtu.be/wmkWMaGuTBQ</item>
+        <item>https://youtu.be/EIoEkbk4zcM</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#FFFFFFFF</color>
+    <color name="textColor">#FF000000</color>
+    <color name="textColor2">#FF000000</color>
+    <color name="light_blue">#2a54f4</color>
+
+    <color name="blue">#3500D3</color>
+    <color name="grey">#808080</color>
+    <color name="dark_grey">#2D2D2D</color>
+    <color name="darker_grey">#080808</color>
+    <color name="background2">#FFFFFFFF</color>
+    <color name="background3">#808080</color>
+    <color name="background4">#973B3B</color>
+    <color name="background6">#FFFFFFFF</color>
+
+    <color name="textGreen">#ef0148</color>
+    <color name="light_pink">#fc327e</color>
+    <color name="light_green">#1ac831</color>
+    <color name="light_yellow">#ffac30</color>
+    <color name="beige9">#79804D</color>
+    <color name="light_orange">#f66224</color>
+    <color name="light_red">#ef0148</color>
+    <color name="dark_green">#CDC733</color>
+    <color name="beige">#BF926B</color>
+    <color name="beige2">#3C2113</color>
+    <color name="beige3">#481E28</color>
+    <color name="beige4">#5E3A21</color>
+    <color name="beige5">#38271D</color>
+    <color name="beige6">#8E7C67</color>
+    <color name="beige7">#2D2920</color>
+    <color name="beige8">#3E482A</color>
+
+    <color name="beige10">#94591C</color>
+    <color name="beige11">#AE755F</color>
+</resources>

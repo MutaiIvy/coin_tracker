@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".fragments.Dashboard">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="COIN TRACKER APP"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="Dashboard"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text2"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_inline"
+                android:text="@string/income"
+                android:textColor="@color/light_green"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSH 10000.00"
+                android:textColor="@color/light_green"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_inline"
+                android:text="@string/expense"
+                android:textColor="@color/light_green"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSH 10000.00"
+                android:textColor="@color/light_green"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_inline"
+                android:text="@string/budget"
+                android:textColor="@color/light_green"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSH 10000.00"
+                android:textColor="@color/light_green"
+                android:textSize="24sp"
+                tools:ignore="DuplicateIds,HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_inline"
+                android:text="@string/goals"
+                android:textColor="@color/light_green"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSH 10000.00"
+                android:textColor="@color/light_green"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Income:"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInc"
+        android:layout_marginTop="4dp"
+        android:scrollbars="horizontal"
+        tools:listitem="@layout/layout_income_item" />
+
+    <TextView
+        android:id="@+id/tvExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_income"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Expense:"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvExp"
+        android:layout_marginTop="4dp"
+        android:scrollbars="horizontal"
+        tools:listitem="@layout/layout_expense_item" />
+
+    <TextView
+        android:id="@+id/tvBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_expense"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Budget:"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBudget"
+        android:layout_marginTop="4dp"
+        android:scrollbars="horizontal"
+        tools:listitem="@layout/layout_create_budget" />
+
+    <TextView
+        android:id="@+id/tv_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_budget"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Goals:"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_goal"
+        android:layout_marginTop="4dp"
+        android:scrollbars="horizontal"
+        tools:listitem="@layout/layout_set_goals" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/beige10"
+        android:importantForAccessibility="no"
+        android:src="@drawable/add"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/background"
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_tips_fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/add_goal_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/beige9"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/bg_rounded_input_field"
+        app:tint="@color/textColor"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/want_tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_goal_fab"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@id/add_budget_fab"
+        android:text="Want Tips?"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_income_fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/add_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/beige4"
+        android:importantForAccessibility="no"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/add"
+        app:tint="@color/black"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/add_income_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_fab"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@id/add_income_fab"
+        android:text="Add Income"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_expense_fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/add_income_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/beige2"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/add"
+        app:tint="@color/textColor"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/add_expense_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_income_fab"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@id/add_expense_fab"
+        android:text="@string/add_expense"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_budget_fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/add_expense_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/beige7"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/add"
+        app:tint="@color/textColor"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/add_budget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_expense_fab"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@id/add_budget_fab"
+        android:text="Add Budget"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_goal_fab"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/add_budget_fab"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/beige8"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/add"
+        app:tint="@color/textColor"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/add_goal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_budget_fab"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@id/add_budget_fab"
+        android:text="Add Goal"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+
+</RelativeLayout>
